@@ -20,12 +20,12 @@ class InvoiceController extends Controller
     {
 
         $filter = new InvoicesFilter();
-        $queryItems = $filter->transform($request);
+        $filterItems = $filter->transform($request);
 
-        if (count($queryItems) == 0) {
+        if (count($filterItems) == 0) {
             return new InvoiceCollection(Invoice::paginate());
         } else {
-            $invoices = Invoice::where($queryItems)->paginate();
+            $invoices = Invoice::where($filterItems)->paginate();
             return new InvoiceCollection($invoices->appends($request->query()));
         }
     }
