@@ -1,0 +1,361 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "rest api",
+    "dateExported": "2024-03-14T11:51:35.816Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7d9b98cb-a82e-4d08-bc9e-a8c2728f6f59",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/user",
+            "url": "{{base_url}}/api/user",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-14T06:51:55.293Z",
+            "modified": "2024-03-14T06:51:55.293Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": []
+        },
+        {
+            "_id": "6655faae-1524-4e20-ad0c-dcd2c147f8e3",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/customers",
+            "url": "{{base_url}}/api/v1/customers",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-14T06:51:55.294Z",
+            "modified": "2024-03-14T06:57:55.176Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "90033360-df45-45b2-bd7e-1fdfc51a39d3",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/customers",
+            "url": "{{base_url}}/api/v1/customers",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-14T06:51:55.295Z",
+            "modified": "2024-03-14T07:59:08.751Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"tarum\",\n  \"type\": \"I\",\n  \"email\": \"tarum@mail.com\",\n  \"address\": \"asda\",\n  \"city\": \"tarasdasdum\",\n  \"state\": \"tarasdasdum\",\n  \"postalCode\": \"1564\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "39ddedcb-6e77-4b9e-8054-439864386291",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/customers/{customer}",
+            "url": "{{base_url}}/api/v1/customers/12222",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-14T06:51:55.296Z",
+            "modified": "2024-03-14T08:07:19.394Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "35d9998c-c6c8-41ee-8934-a3b389f7a16a",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/customers/{customer}",
+            "url": "{{base_url}}/api/v1/customers/1",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-14T06:51:55.297Z",
+            "modified": "2024-03-14T08:16:29.432Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"123\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "d9cfcb69-7b86-4d73-9c0d-2451d12e2459",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/customers/{customer}",
+            "url": "{{base_url}}/api/v1/customers/:customer",
+            "method": "PATCH",
+            "sortNum": 60000,
+            "created": "2024-03-14T06:51:55.298Z",
+            "modified": "2024-03-14T06:51:55.298Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": []
+        },
+        {
+            "_id": "380c240a-a3de-44cf-ad72-627cd19eae98",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/customers/{customer}",
+            "url": "{{base_url}}/api/v1/customers/:customer",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-03-14T06:51:55.299Z",
+            "modified": "2024-03-14T06:51:55.299Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": []
+        },
+        {
+            "_id": "9f3bf47e-6270-4027-a777-1f188d18be42",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/invoices",
+            "url": "{{base_url}}/api/v1/invoices",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-14T06:51:55.300Z",
+            "modified": "2024-03-14T06:51:55.300Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": []
+        },
+        {
+            "_id": "57610276-5eae-429c-af0c-0b10a0d72001",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/invoices",
+            "url": "{{base_url}}/api/v1/invoices",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-03-14T06:51:55.301Z",
+            "modified": "2024-03-14T07:59:31.387Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"customerId\": 234,\n  \"amount\": 9999.99,\n  \"status\": \"v\",\n  \"billedDate\": \"2015-09-34\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "02ede1e7-3af3-45be-83ec-86d52565d9c4",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/invoices/{invoice}",
+            "url": "{{base_url}}/api/v1/invoices/1",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-14T06:51:55.302Z",
+            "modified": "2024-03-14T08:18:39.425Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "5e77269a-31dd-4b47-ba1a-01c9d15df246",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/invoices/{invoice}",
+            "url": "{{base_url}}/api/v1/invoices/1",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-03-14T06:51:55.303Z",
+            "modified": "2024-03-14T08:21:44.182Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"customerId\": \"2\",\n  \"status\": \"B\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "f3422a3b-2fe4-486e-9fda-8848406e62f0",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/invoices/{invoice}",
+            "url": "{{base_url}}/api/v1/invoices/:invoice",
+            "method": "PATCH",
+            "sortNum": 120000,
+            "created": "2024-03-14T06:51:55.304Z",
+            "modified": "2024-03-14T06:51:55.304Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": []
+        },
+        {
+            "_id": "15676aab-8a2a-4482-8c97-20d138300833",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "api/v1/invoices/{invoice}",
+            "url": "{{base_url}}/api/v1/invoices/:invoice",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-03-14T06:51:55.305Z",
+            "modified": "2024-03-14T06:51:55.305Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": []
+        },
+        {
+            "_id": "049ef024-9799-4f34-b2e4-a413b5091958",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "bulk invoice",
+            "url": "{{base_url}}/api/v1/invoices/bulk",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-03-14T11:36:01.044Z",
+            "modified": "2024-03-14T11:51:08.458Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\r\n  {\r\n    \"customerId\": 86,\r\n    \"amount\": 5467,\r\n    \"status\": \"p\",\r\n    \"billedDate\": \"2023-08-26 16:39:55\",\r\n    \"paidDate\": \"2022-06-22 01:21:59\"\r\n  },\r\n  {\r\n    \"customerId\": 59,\r\n    \"amount\": 9458,\r\n    \"status\": \"b\",\r\n    \"billedDate\": \"2022-12-20 15:07:05\",\r\n    \"paidDate\": \"2023-01-19 03:48:56\"\r\n  },\r\n  {\r\n    \"customerId\": 71,\r\n    \"amount\": 4449,\r\n    \"status\": \"b\",\r\n    \"billedDate\": \"2021-10-29 08:34:15\",\r\n    \"paidDate\": \"2023-06-04 07:21:32\"\r\n  }\r\n]",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "preReq": {
+            "inlineScripts": []
+        },
+        "postReq": {
+            "inlineScripts": []
+        }
+    }
+}
