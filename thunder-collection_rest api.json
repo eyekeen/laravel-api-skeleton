@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "rest api",
-    "dateExported": "2024-03-14T11:51:35.816Z",
+    "dateExported": "2024-03-14T12:31:48.110Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -36,7 +36,7 @@
             "method": "GET",
             "sortNum": 20000,
             "created": "2024-03-14T06:51:55.294Z",
-            "modified": "2024-03-14T06:57:55.176Z",
+            "modified": "2024-03-14T12:29:20.911Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -49,6 +49,10 @@
             ],
             "params": [],
             "reqType": "get",
+            "auth": {
+                "type": "bearer",
+                "bearer": "2|dnG1yjnXrXs6BogTLJZ0SCLxHTpQlpLqvuuEgRm68764d478"
+            },
             "tests": []
         },
         {
@@ -346,6 +350,77 @@
                 "type": "json",
                 "raw": "[\r\n  {\r\n    \"customerId\": 86,\r\n    \"amount\": 5467,\r\n    \"status\": \"p\",\r\n    \"billedDate\": \"2023-08-26 16:39:55\",\r\n    \"paidDate\": \"2022-06-22 01:21:59\"\r\n  },\r\n  {\r\n    \"customerId\": 59,\r\n    \"amount\": 9458,\r\n    \"status\": \"b\",\r\n    \"billedDate\": \"2022-12-20 15:07:05\",\r\n    \"paidDate\": \"2023-01-19 03:48:56\"\r\n  },\r\n  {\r\n    \"customerId\": 71,\r\n    \"amount\": 4449,\r\n    \"status\": \"b\",\r\n    \"billedDate\": \"2021-10-29 08:34:15\",\r\n    \"paidDate\": \"2023-06-04 07:21:32\"\r\n  }\r\n]",
                 "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4b0051a-6ae6-4ea3-955c-cf3d30d560cf",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "register",
+            "url": "{{base_url}}/api/user/register",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2024-03-14T12:21:47.056Z",
+            "modified": "2024-03-14T12:22:52.430Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"tarum\",\n  \"email\": \"test@mail.ru\",\n  \"password\": \"root123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cfade316-e260-4eac-a563-4d542d065722",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "login",
+            "url": "{{base_url}}/api/user/login",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2024-03-14T12:26:05.536Z",
+            "modified": "2024-03-14T12:29:09.562Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test@mail.ru\",\n  \"password\": \"root123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa8992ec-b341-45a3-a831-e733104c9aa1",
+            "colId": "3d1f9aee-25c3-4c3d-9894-7af3a83013c2",
+            "containerId": "",
+            "name": "logout",
+            "url": "{{base_url}}/api/user/logout",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2024-03-14T12:29:56.807Z",
+            "modified": "2024-03-14T12:30:32.633Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "2|dnG1yjnXrXs6BogTLJZ0SCLxHTpQlpLqvuuEgRm68764d478"
             },
             "tests": []
         }
